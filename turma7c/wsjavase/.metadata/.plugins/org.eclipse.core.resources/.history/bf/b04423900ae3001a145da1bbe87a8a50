@@ -1,0 +1,29 @@
+package br.com.universidade.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.universidade.modelo.Aluno;
+
+
+public class TesteAluno {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//String nome ="teste";
+		//Scanner teclado = new Scanner();
+		
+		Aluno objeto = new Aluno();
+		System.out.println(objeto); //instancia objeto
+		
+		objeto.preencherNome(JOptionPane.showInputDialog("Digite o nome: "));
+		objeto.preencherEmail(JOptionPane.showInputDialog("Digite o Email: "));
+		objeto.preencherRm(Integer.parseInt(JOptionPane.showInputDialog("Digite a RM: ")));
+		//System.out.println(objeto.retornarNome());
+		
+		JOptionPane.showMessageDialog(null,"Nome: " + objeto.retornarNome() + "\nEmail: " + objeto.retornarEmail() + "\nRM: " + objeto.retornarRm());
+//		JOptionPane.showMessageDialog(null,objeto.retornarEmail());
+	//	JOptionPane.showMessageDialog(null,objeto.retornarRm());
+	}
+
+}

@@ -1,0 +1,21 @@
+package br.com.universidade.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.universidade.modelo.Aluno;
+
+public class TesteConstrutorCheio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+			Aluno obj = new Aluno(
+					
+					JOptionPane.showInputDialog("Nome").toUpperCase(),
+					JOptionPane.showInputDialog("Email").toLowerCase(),
+					Integer.parseInt(JOptionPane.showInputDialog("RM"))
+					);
+			System.out.println(obj.getALL());
+	}
+
+}

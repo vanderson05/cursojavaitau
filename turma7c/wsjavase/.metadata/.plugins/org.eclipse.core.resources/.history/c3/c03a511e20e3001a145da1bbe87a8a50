@@ -1,0 +1,26 @@
+package br.com.ecommerce.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.ecommerce.modelo.Produto;
+
+public class TesteProdutoALL {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Produto produto = new Produto();
+		produto.setALL(
+				Integer.parseInt(JOptionPane.showInputDialog("ID: ")), 
+				JOptionPane.showInputDialog("Descricao: "),
+				Integer.parseInt(JOptionPane.showInputDialog("qtde: ")),
+				Float.parseFloat(JOptionPane.showInputDialog("valorCompra: ")),
+				Float.parseFloat(JOptionPane.showInputDialog("valorVenda"))
+				
+				);
+		JOptionPane.showMessageDialog(null, produto.getALL()):
+	//	System.out.println(produto.getALL());
+
+	}
+
+}

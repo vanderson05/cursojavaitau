@@ -1,0 +1,29 @@
+package br.com.ecommerce.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.ecommerce.modelo.Produto;
+
+public class TesteProduto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Produto objeto = new Produto();
+		System.out.println(objeto);
+
+		
+		
+		objeto.preencherID(Integer.parseInt(JOptionPane.showInputDialog("Digite o ID: ")));
+		objeto.preencherDescricao(JOptionPane.showInputDialog("Digite a Descricacao: "));
+		objeto.preencherQtde(Integer.parseInt(JOptionPane.showInputDialog("Digite a QTDE: ")));
+		objeto.preencherValorCompra(Float.parseFloat(JOptionPane.showInputDialog("Digite o Valor de Compra: ")));
+		objeto.preencherValorVenda(Float.parseFloat(JOptionPane.showInputDialog("Digite o Valor de Venda: ")));
+		
+		JOptionPane.showMessageDialog(null,"ID:  " + objeto.retornarID() + "\nDescricao:  " + objeto.retornarDescricacao() + "\nQuantidade:  " + objeto.retornarDescricacao()
+		+ "\nValor de Compra:  " + objeto.retornarValorCompra() + "\nValor de Venda:  " + objeto.retornarValorVenda());
+		
+	}
+
+}

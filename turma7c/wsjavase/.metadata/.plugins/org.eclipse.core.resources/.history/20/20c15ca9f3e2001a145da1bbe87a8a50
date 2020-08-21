@@ -1,0 +1,17 @@
+package br.com.universidade.teste;
+
+import br.com.universidade.modelo.Aluno;
+
+
+public class TesteAluno {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//String nome ="teste";
+		//Scanner teclado = new Scanner();
+		
+		Aluno objeto = new Aluno();
+	}
+
+}

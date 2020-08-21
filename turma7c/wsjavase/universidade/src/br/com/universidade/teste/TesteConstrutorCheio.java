@@ -1,0 +1,40 @@
+package br.com.universidade.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.universidade.atalhos.Magica;
+import br.com.universidade.modelo.Aluno;
+import br.com.universidade.modelo.Endereco;
+
+public class TesteConstrutorCheio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+			Endereco objEndereco = new Endereco();
+			
+			objEndereco.setALL(
+					
+					Magica.s("Logradouro"),
+					Magica.s("Numero: "),
+					Magica.s("Bairro"),
+					Magica.s("Cidade"),
+					Magica.s("bairro"),
+					Magica.s("UF"),
+					Magica.s("CEP")
+					
+					);
+			
+			
+			Aluno obj = new Aluno(
+					
+					JOptionPane.showInputDialog("Nome").toUpperCase(),
+					JOptionPane.showInputDialog("Email").toLowerCase(),
+					Integer.parseInt(JOptionPane.showInputDialog("RM")),
+					objEndereco
+					
+					);
+			System.out.println(obj.getALL());
+	}
+
+}

@@ -1,0 +1,55 @@
+package br.com.ecommerce.modelo;
+
+public class Produto {
+
+	
+	private int id;
+	private String descricao;
+	private int qtde;
+	private float valorCompra;
+	private float valorVenda;
+	
+	
+	public void preencherID(int pID) {
+		id = pID;
+	}
+	
+	public int retornarID() {
+		return id;
+	}
+	
+	public void preencherDescricao(String pDescricao) {
+		descricao = pDescricao;
+	}
+	
+	public String retornarDescricacao() {
+		return descricao;
+	}
+	
+	
+	public void preencherQtde(int pQtde) {
+		qtde = pQtde;
+	}
+	
+	public int retornarQtde() {
+		return qtde;
+	}
+	
+	public void preencherValorCompra(float pVCompra) {
+		valorCompra = pVCompra;
+	}
+	
+	public float retornarValorCompra() {
+		return valorCompra;
+	}
+	
+	public void preencherValorVenda(float pVVenda) {
+		valorVenda = pVVenda;
+	}
+	
+	public float retornarValorVenda() {
+		return valorVenda;
+	}
+	
+
+}
