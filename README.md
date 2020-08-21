@@ -3,4 +3,4 @@ Repositório para os projetos Java do curso para o ITAU
 
 
 
-Os projetos deste repositorio são voltados para o desenvolvimento de POO, esta em uma ws do eclipse 2020
+Os projetos deste repositorio são voltados para o desenvolvimento de programação orientada a objetos, esta em uma ws do eclipse 2020
